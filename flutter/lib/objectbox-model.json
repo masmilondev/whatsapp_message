@@ -1,0 +1,175 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1467665897576359487",
+      "lastPropertyId": "6:9113838504498379174",
+      "name": "CustomerModel",
+      "properties": [
+        {
+          "id": "1:6859999724237606135",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3163464463903693746",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:8968445755859713237",
+          "name": "mobile",
+          "type": 9
+        },
+        {
+          "id": "4:2998942111761068250",
+          "name": "city",
+          "type": 9
+        },
+        {
+          "id": "5:4610329757278925715",
+          "name": "numberOfOrder",
+          "type": 6
+        },
+        {
+          "id": "6:9113838504498379174",
+          "name": "status",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:3761524127094006462",
+      "lastPropertyId": "10:8634889336469823606",
+      "name": "TawabelCustomerModel",
+      "properties": [
+        {
+          "id": "1:6990333742876165417",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:679769509730283815",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:7165601763394918594",
+          "name": "mobile",
+          "type": 9
+        },
+        {
+          "id": "4:3484190849117254909",
+          "name": "city",
+          "type": 9
+        },
+        {
+          "id": "5:1066279832609852686",
+          "name": "numberOfOrder",
+          "type": 6
+        },
+        {
+          "id": "6:8927964952597323167",
+          "name": "status",
+          "type": 9
+        },
+        {
+          "id": "7:3500529952017528085",
+          "name": "type",
+          "type": 9
+        },
+        {
+          "id": "8:1014431019569624438",
+          "name": "amount",
+          "type": 8
+        },
+        {
+          "id": "9:7468882766652313384",
+          "name": "isBlock",
+          "type": 1
+        },
+        {
+          "id": "10:8634889336469823606",
+          "name": "addedDate",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:7011838201095573666",
+      "lastPropertyId": "10:4459311135925909664",
+      "name": "AbandonedModel",
+      "properties": [
+        {
+          "id": "1:3261279947958982779",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8134786639288790362",
+          "name": "phase",
+          "type": 9
+        },
+        {
+          "id": "3:6377543383463381740",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "4:4783798640037729700",
+          "name": "mobile",
+          "type": 9
+        },
+        {
+          "id": "5:9183873632400211746",
+          "name": "numberOfProduct",
+          "type": 6
+        },
+        {
+          "id": "6:6228507253627335007",
+          "name": "amount",
+          "type": 8
+        },
+        {
+          "id": "7:8897086233260747621",
+          "name": "updatedAt",
+          "type": 10
+        },
+        {
+          "id": "8:7589280214744964850",
+          "name": "isSaudi",
+          "type": 1
+        },
+        {
+          "id": "9:7021301761084650020",
+          "name": "status",
+          "type": 9
+        },
+        {
+          "id": "10:4459311135925909664",
+          "name": "isBlocked",
+          "type": 1
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:7011838201095573666",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

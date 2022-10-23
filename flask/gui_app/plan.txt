@@ -1,0 +1,26 @@
+Sending whatsapp message
+init app
+
+need:
+    - file link
+    - A = name
+    - B = number
+
+What we want:
+we have two files
+    - customer
+    - abandoned
+    - Filter contact from customer by filter condition
+    - Make all condition separate worksheet, so user can see all contact by worksheet
+    - when sending message, and if its customer, user can select worksheet and send message
+
+remove duplicates from its.
+open excel file
+    way to remove duplicate:
+        make a dictionary
+        add contacts to dictionary by
+            key = mobile number
+            value = full row
+            save all contact to same worksheet. remove old worksheet and add new worksheet with new contacts.
+
+Whenever we want to send message, keep the contact to "messages" worksheet mannually
