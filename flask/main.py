@@ -15,8 +15,10 @@ from selenium.webdriver.common.keys import Keys
 # App function
 app = Flask(__name__)
 
-fp = webdriver.FirefoxProfile('C:/Users/masmi/AppData/Roaming/Mozilla/Firefox/Profiles/hpoihc25.default-release')
-webdriver.FirefoxProfile('C:/Users/masmi/AppData/Roaming/Mozilla/Firefox/Profiles/hpoihc25.default-release')
+fp = webdriver.FirefoxProfile('C:/Users/masmi_lhcoir7/AppData/Roaming/Mozilla/Firefox/Profiles/muwfujfx.default-release')
+webdriver.FirefoxProfile('C:/Users/masmi_lhcoir7/AppData/Roaming/Mozilla/Firefox/Profiles/muwfujfx.default-release')
+# fp = webdriver.FirefoxProfile('C:/Users/masmi/AppData/Roaming/Mozilla/Firefox/Profiles/hpoihc25.default-release')
+# webdriver.FirefoxProfile('C:/Users/masmi/AppData/Roaming/Mozilla/Firefox/Profiles/hpoihc25.default-release')
 browser = webdriver.Firefox(fp, executable_path='C:\geckodriver.exe')
 
 browser = [False]

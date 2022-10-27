@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 import 'package:dio/dio.dart';
 
@@ -423,8 +424,12 @@ class ExcelManipulationBloc extends ChangeNotifier {
           query = abandonedModelBox.query(
             AbandonedModel_.status.equals(customerStatus!).andAll(
               [
-                AbandonedModel_.amount.greaterOrEqual(299),
+                AbandonedModel_.amount.greaterOrEqual(80),
                 AbandonedModel_.isSaudi.equals(true),
+                AbandonedModel_.mobile.startsWith("966"),
+                AbandonedModel_.updatedAt.greaterOrEqual(
+                    DateTime(2022, 10, 1, 0, 0, 0).millisecondsSinceEpoch),
+                AbandonedModel_.phase.notEquals("completed"),
               ],
             ),
           );
@@ -625,6 +630,7 @@ class ExcelManipulationBloc extends ChangeNotifier {
       totalToSend = tawabelCustomers.length;
       notifyListeners();
       for (var item in tawabelCustomers) {
+        log("Count ❤️ $count");
         if (!shouldSend) break;
         if (item.isBlock == true) continue;
         await sendMessage(
@@ -632,17 +638,17 @@ class ExcelManipulationBloc extends ChangeNotifier {
         sent++;
         remaining = totalToSend - sent;
         notifyListeners();
-        var nowTime = TimeOfDay.now();
-        if (nowTime.hour >= 4 &&
-            nowTime.minute >= 0 &&
-            nowTime.hour <= 10 &&
-            nowTime.minute <= 59) {
-          break;
-        }
-        count++;
-        if (count == 50) {
+        // var nowTime = TimeOfDay.now();
+        // if (nowTime.hour >= 4 &&
+        //     nowTime.minute >= 0 &&
+        //     nowTime.hour <= 10 &&
+        //     nowTime.minute <= 59) {
+        //   break;
+        // }
+        count = count + 1;
+        if (count == 5) {
           count = 0;
-          notifyListeners();
+          // notifyListeners();
           _spinnerOn();
           print("Closing browser");
           await closeBrowser();

@@ -122,7 +122,7 @@ def send_message(browser, data):
             #     message_box.send_keys(msg)
             message_box.send_keys(Keys.SHIFT + Keys.ENTER)
 
-        time.sleep(5)
+        time.sleep(1)
         WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.XPATH,
                                                                      '/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/span[2]/div/div[2]/div[2]/button'))).click()
 

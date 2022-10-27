@@ -12,6 +12,8 @@ import 'package:tawabel/models/tawabel_customer_model.dart';
 class ExcelUtils {
   static List<String> block = [
     "9660550386348",
+    "9660504398809",
+    "9660555617711",
   ];
   static getExcelDocument() async {
     try {
